@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Homepage by Josep Coronado</title>
+        <meta charset="UTF-8">
+        <style>
+
+            /* CSS RESET START */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            /* CSS RESET END */
+
+            body, input {
+                font-family: arial, sans-serif;
+                color: #222222;
+                font-size: 14px;
+            }
+
+            img {
+                display: block;
+                width: 272px;
+                margin: auto;
+            }
+            #logo {
+                margin-top: 25vh;
+            }
+            #search {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 25%;
+                margin: 50px auto;
+                padding: 10px 15px;
+                border: 1px #cfcfcf solid;
+                border-radius: 20px;
+            }
+            #search-bar {
+                width: 90%;
+                height: 15px;
+                outline: none;
+                border: none;
+                background-color: transparent;
+            }
+            #looking-glass {
+                height: 20px;
+                width: auto;
+                opacity: 0.5;
+                margin: 0;
+            }
+            #voice-search-icon {
+                height: 18px;
+                width: auto;
+                margin: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The iconic Google logo">
+            <div id="search">
+                <img id="looking-glass" src="https://icons-for-free.com/iconfiles/png/512/GLASS-131994911314916362.png">
+                <input id="search-bar"></input>
+                <a href=#><img id="voice-search-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png"></a>
+            </div>
+    </body>
+</html>
