@@ -6,73 +6,115 @@
         <style>
 
             /* CSS RESET START */
-
-            html, body, div, span, applet, object, iframe,
-            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-            a, abbr, acronym, address, big, cite, code,
-            del, dfn, em, img, ins, kbd, q, s, samp,
-            small, strike, strong, sub, sup, tt, var,
-            b, u, i, center,
-            dl, dt, dd, ol, ul, li,
-            fieldset, form, label, legend,
-            table, caption, tbody, tfoot, thead, tr, th, td,
-            article, aside, canvas, details, embed, 
-            figure, figcaption, footer, header, hgroup, 
-            menu, nav, output, ruby, section, summary,
-            time, mark, audio, video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline;
-            }
-
-            /* HTML5 display-role reset for older browsers */
-            article, aside, details, figcaption, figure, 
-            footer, header, hgroup, menu, nav, section {
-                display: block;
-            }
-            body {
-                line-height: 1;
-            }
-            ol, ul {
-                list-style: none;
-            }
-            blockquote, q {
-                quotes: none;
-            }
-            blockquote:before, blockquote:after,
-            q:before, q:after {
-                content: '';
-                content: none;
-            }
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-
+                html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    font-size: 100%;
+                    font: inherit;
+                    vertical-align: baseline;
+                }
+                /* HTML5 display-role reset for older browsers */
+                article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                    display: block;
+                }
+                body {
+                    line-height: 1;
+                }
+                ol, ul {
+                    list-style: none;
+                }
+                blockquote, q {
+                    quotes: none;
+                }
+                blockquote:before, blockquote:after, q:before, q:after {
+                    content: '';
+                    content: none;
+                }
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
             /* CSS RESET END */
 
-            body, input {
-                font-family: arial, sans-serif;
+            body, input, p {
+                font-family: Arial, Helvetica, sans-serif;
                 color: #222222;
                 font-size: 14px;
             }
 
-            img {
+
+            /***** NAVIGATION BAR *****/
+
+            #navbar-main-div {
+                margin: 0 auto;
+                width: 90%;
+            }
+            #navbar {
+                /* Positioning */
+                position: absolute;
+                top: 30px;
+                /* Grid */
+                display: grid;
+                grid-template-columns: repeat(2, 1fr) 20fr repeat(4, 1fr);
+                grid-template-rows: 20px;
+                align-items: center;
+                /* Size */
+                width: 90%;
+                height: 30px;
+                /***/
+                background-color: transparent;
+            }
+            #navbar a {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: gray;
+            }
+            #about-tag, #store-tag, #images-tag, #google-apps-icon {
+                margin-left: 25px;
+            }
+            #google-apps-icon {
+                height: 18px;
+                width: auto;
+            }
+            #sign-in-button {
+                height: 25px;
+                width: 80px;
+                text-align: center;
+                vertical-align: middle;
+                padding: 0;
+                margin-left: 20px;
+                color: white;
+                font-weight: bold;
+                font-family: arial;
+                font-size: 12px;
+                border: none;
+                border-radius: 5px;
+                background-color: #3474ff
+            }
+
+
+            /***** SEARCH BAR AND LOGO *****/
+
+            #main-div {
+                margin-top: 25vh;
+            }
+            #logo {
                 display: block;
                 width: 272px;
                 margin: auto;
             }
-            #logo {
-                margin-top: 25vh;
-            }
             #search {
+                /* positioning */
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                /* size */
                 width: 25%;
+                max-width: 500px;
+                min-width: 300px;
+                /* margin/padding/border */
                 margin: 50px auto;
                 padding: 10px 15px;
                 border: 1px #cfcfcf solid;
@@ -89,22 +131,35 @@
                 height: 20px;
                 width: auto;
                 opacity: 0.5;
-                margin: 0;
+                margin-right: 5px;
             }
             #voice-search-icon {
                 height: 18px;
                 width: auto;
-                margin: 0;
+                margin-right: 5px;
             }
         </style>
     </head>
 
     <body>
+        <div id="navbar-main-div">
+            <div id="navbar">
+                <a id="about-tag" href="#">About</a>
+                <a id="store-tag" href="#">Store</a>
+                <div></div>
+                <a id="gmail-tag" href="#">Gmail</a>
+                <a id="images-tag" href="#">Images</a>
+                <a href="#"><img id="google-apps-icon" src="https://cdn3.iconfinder.com/data/icons/faticons/32/grid-2-01-512.png" alt="Google Apps"></a>
+                <a href="#"><button id="sign-in-button">Sign in</button></a>
+            </div>
+        </div>
+        <div id="main-div">
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The iconic Google logo">
             <div id="search">
                 <img id="looking-glass" src="https://icons-for-free.com/iconfiles/png/512/GLASS-131994911314916362.png">
                 <input id="search-bar"></input>
                 <a href=#><img id="voice-search-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png"></a>
             </div>
+        </div>
     </body>
 </html>
