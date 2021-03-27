@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <title>Google Homepage by Josep Coronado</title>
+        <title>Google (crownie23)</title>
         <meta charset="UTF-8">
+        <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/google-2981831-2476479.png">
         <style>
-            
+
         /* General */
             * {
                 font-family: Arial, Helvetica, sans-serif;
@@ -70,6 +71,9 @@
                 min-width: 400px;
                 max-width: 600px;
             }
+            .search-bar:hover, .search-bar:focus-within {
+                box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            }
             .search-bar img {
                 height: 20px;
                 margin: 0;
@@ -97,8 +101,14 @@
                 font-size: 0.9em;
                 background-color: #f8f9fa;
                 color: rgb(48, 48, 48);
+                border: 1px solid #ffffff;
             }
-
+            .buttons-container button:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                cursor: pointer;
+            }
         /* Footer */
             .footer-container {
                 position: fixed;
@@ -126,6 +136,7 @@
     </header>
 
     <body>
+
     <!-- Top Navigation Bar -->
         <div class="navbar-container">
             <div class="navbar">
@@ -134,9 +145,10 @@
                     <li><a href="#">Images</a></li>
                 </ul>
                 <a href="#"><img id="google-apps" src="https://icon-library.com/images/dot-icon/dot-icon-20.jpg" alt="Google Apps"></a>
-                <a href="#"><img id="profile-pic" src="https://avatars.githubusercontent.com/u/81234139?s=400&u=67824a0f0f7744fd28746461f3b3b22b6feaaac7&v=4" alt="Josep's profile pic"></a>    
+                <a href="https://github.com/crownie23" target="_blank"><img id="profile-pic" src="https://avatars.githubusercontent.com/u/81234139?s=400&u=67824a0f0f7744fd28746461f3b3b22b6feaaac7&v=4" alt="Josep's profile pic"></a>    
             </div>
         </div>
+
     <!-- Logo and Search Bar -->
         <div class="main-container">
             <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
@@ -150,6 +162,7 @@
                 <a href="#"><button>I'm feeling lucky</button></a>
             </div>
         </div>
+        
     <!-- Footer -->
         <div class="footer-container">
             <div class="footer-left">
