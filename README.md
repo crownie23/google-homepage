@@ -1,10 +1,6 @@
-This is the first "real" website I've built. The project is part of The
-Odin Project's curriculum, and the aim is to clone Google's homepage
-(only the look-and-feel, without implementing any actual search engine
-features).
+Google's homepage clone. Replicated the look-and-feel of the homepage,
+without implementing any actual search engine features.
 
-Did everything from scratch, without inspecting any code from the real 
-Google homepage. Lots of Google searching and trial-and-error went into 
-it though.
+All of it is done with vanilla HTML5 and CSS3 (no libraries/frameworks).
 
 Live preview: https://crownie23.github.io/google-homepage/.
